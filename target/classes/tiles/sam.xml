@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="top" value="/WEB-INF/views/top.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp"/>
+	</definition>	   
+	<definition name="main" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
+	</definition>
+	
+		<definition name="coffeestory" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/coffee/coffeestory.jsp"/>
+	</definition>
+	
+		<definition name="show" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/coffee/show.jsp"/>
+	</definition>
+	
+	<definition name="ceo" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/coffee/ceo.jsp"/>
+	</definition>
+	
+		<definition name="menu_new" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_new.jsp"/>
+	</definition>
+	
+	<definition name="menu_coffee" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_coffee.jsp"/>
+	</definition>
+	
+	<definition name="menu_drink" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_drink.jsp"/>
+	</definition>
+	
+	<definition name="menu_dessert" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_dessert.jsp"/>
+	</definition>
+
+		<definition name="menu_master" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_master.jsp"/>
+	</definition>
+	
+		<definition name="menu_input" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_input.jsp"/>
+	</definition>
+	
+		<definition name="menu_detail" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_detail.jsp"/>
+	</definition>
+	
+		<definition name="menu_detail2" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_detail2.jsp"/>
+	</definition>
+	
+		<definition name="menu_modify1" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_modify1.jsp"/>
+	</definition>
+	
+	<definition name="menu_modify2" extends="baseLayout">
+		<put-attribute name="title" value="메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/menu/menu_modify2.jsp"/>
+	</definition>
+</tiles-definitions>

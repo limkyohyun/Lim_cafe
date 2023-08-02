@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.c.lim.menu.Service1">
+<insert id="menuinsert">
+insert into menu(menuname, menuename,caffeine,calorie,natrium,sugars,saturatedfat,protein,menuaccount,poster,category) values(#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{param7},#{param8},#{param9},#{param10},#{param11})
+</insert>
+
+<select id="menu_new" resultType="com.c.lim.menu.MenuDTO">
+select * from menu where category = '신메뉴'
+</select>
+
+<select id="menu_coffee" resultType="com.c.lim.menu.MenuDTO">
+select * from menu where category = '커피'
+</select>
+
+<select id="menu_drink" resultType="com.c.lim.menu.MenuDTO">
+select * from menu where category = '음료'
+</select>
+
+<select id="menu_dessert" resultType="com.c.lim.menu.MenuDTO">
+select * from menu where category = '디저트'
+</select>
+
+<select id="menu_detail" resultType="com.c.lim.menu.MenuDTO">
+select * from menu where menuname = #{param1}
+</select>
+
+<select id="menu_modify1" resultType="com.c.lim.menu.MenuDTO">
+select * from menu
+</select>
+
+<select id="menu_modify2" resultType="com.c.lim.menu.MenuDTO">
+select * from menu where menuname=#{param1}
+</select>
+
+<update id="menu_modifysave">
+update menu set menuename=#{param2}, caffeine=#{param3}, calorie =#{param4},  natrium =#{param5},sugars =#{param6},saturatedfat =#{param7},protein=#{param8},menuaccount=#{param9},poster=#{param10},category=#{param11} where menuname=#{param1} 
+</update>
+
+<delete id="menu_delete">
+delete menu where menuname=#{param1}
+</delete>
+
+</mapper>
